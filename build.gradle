@@ -1,9 +1,6 @@
 task hello << {
-    doLast {
-        println 'Hello world!'
-    }
+    println 'Hello world!'
 }
-
 task intro(dependsOn: hello) << {
     println "I'm Gradle"
 }
