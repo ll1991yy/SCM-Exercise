@@ -5,4 +5,5 @@ task intro(dependsOn: hello) << {
     println "I'm Gradle"
     println name
     println project.name
+    println project.path
 }
