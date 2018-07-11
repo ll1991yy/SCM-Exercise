@@ -1,3 +1,4 @@
+apply plugin: 'java' 
 task hello << {
     println 'Hello world!'
 }
@@ -7,3 +8,13 @@ task intro(dependsOn: hello) << {
     println project.name
     println project.path
 }
+sourceSets {
+    main {
+        java {
+            srcDir '/'
+        }
+        resources {
+            srcDir '/'
+        }
+    }
+} 
